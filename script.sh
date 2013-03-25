@@ -19,7 +19,7 @@ DIR=~/Development/projects/bannerstalker #replace with the path to .
 
 rm $DIR/diff.txt;
 
-curl --data "term_code=201410&term_subj=0&attr=0&levl=0&status=0&search=Search" http://courselist.wm.edu/wmcourseschedule/courseinfo/searchresults | grep -A 11 $CRN | diff - $DIR/out.txt > $DIR/diff.txt; 
+curl --data "term_code=201410&term_subj=0&attr=0&levl=UG&status=0&search=Search" http://courselist.wm.edu/wmcourseschedule/courseinfo/searchresults | grep -A 11 $CRN | diff - $DIR/out.txt > $DIR/diff.txt; 
 
 if [ -s diff.txt ]; then 
     echo "different";

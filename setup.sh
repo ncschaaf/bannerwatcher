@@ -16,4 +16,4 @@
 CRN=18859 #enter your crn
 DIR=~/Development/projects/bannerstalker/ #replace with path to directory where this is stored
 
-curl --data "term_code=201410&term_subj=0&attr=0&levl=0&status=0&search=Search" http://courselist.wm.edu/wmcourseschedule/courseinfo/searchresults | grep -A 11 $CRN > $DIR/out.txt
+curl --data "term_code=201410&term_subj=0&attr=0&levl=UG&status=0&search=Search" http://courselist.wm.edu/wmcourseschedule/courseinfo/searchresults | grep -A 11 $CRN > $DIR/out.txt
