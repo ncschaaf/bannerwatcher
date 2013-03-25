@@ -1,0 +1,11 @@
+Welcome to the simple banner watcher!
+
+To use this, you will need to do a few things:
+1. change the CRN and DIR variables in setup.sh and script.sh
+2. enter your email information in mailUpdate.py
+3. run setup.sh
+4. place script.sh in a chronjob
+
+
+After that, you should recieve emails when the status of your class changes.
+If you would like to recieve text messages, change the addr variable in mailUpdate.py to mail to your favorite email-to-textmessage service (many major carriers have emails for this purpose)
